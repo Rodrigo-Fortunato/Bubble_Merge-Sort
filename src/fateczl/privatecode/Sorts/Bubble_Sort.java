@@ -4,7 +4,7 @@ public class Bubble_Sort {
     public Bubble_Sort() {
     }
 
-    public void bubbleSort(int[] vetor) {
+    public int[] bubbleSort(int[] vetor) {
         int tamanho = vetor.length;
 
         for(int cont = 0; cont < tamanho; ++cont) {
@@ -16,6 +16,7 @@ public class Bubble_Sort {
                 }
             }
         }
+        return vetor;
 
     }
 }

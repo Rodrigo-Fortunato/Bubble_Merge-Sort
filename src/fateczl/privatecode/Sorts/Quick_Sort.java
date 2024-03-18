@@ -5,13 +5,15 @@ public class Quick_Sort {
         super();
     }
 
-    public void quickSort(int[]vetor, int inicio, int fim){
+    public int[] quickSort(int[]vetor, int inicio, int fim){
         if (fim > inicio){
             int posicaoPivo = dividir(vetor,inicio,fim);
             quickSort(vetor,inicio,posicaoPivo-1);
             quickSort(vetor,posicaoPivo+1, fim);
 
         }
+        return vetor;
+
     }
 
     private int dividir (int[] vetor, int inicio, int fim){
